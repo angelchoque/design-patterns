@@ -60,3 +60,33 @@ const numbers = [1, 2, 3, 4, 5]
 const total = numbers.reduce((ac, number) => ac + number, 0) // 0: valor inicial
 
 console.log(total)
+
+// PROGRAMACIÓN ORIENTADA A OBJETO: POO
+// CLASE
+
+class Drink {
+
+  // constructor se ejecuta al momento de crear la clase
+  constructor(name) {
+    this.name = name
+  }
+
+  info() {
+    return "La bebida es: " + this.name
+  }
+}
+
+// Función
+
+function DrinkFn(name) {
+  this.name = name
+  this.info = function () {
+    return "La bebida es: " + this.name
+  }
+}
+
+const drink = new Drink("Vino")
+console.log("🚀 ~ ", drink.info())
+
+const drinkFn = new DrinkFn("awa")
+console.log("🚀 ~ ", drinkFn.info())
