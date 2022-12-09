@@ -54,3 +54,9 @@ console.log(names);
 const namesUpper = names.map((name) => name.toUpperCase())
 console.log("🚀 ~", namesUpper)
 console.log("🚀 ~", names)
+
+// REDUCE
+const numbers = [1, 2, 3, 4, 5]
+const total = numbers.reduce((ac, number) => ac + number, 0) // 0: valor inicial
+
+console.log(total)
