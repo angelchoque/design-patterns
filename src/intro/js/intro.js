@@ -49,3 +49,8 @@ names.forEach((name) => {
 console.log(names);
 names.sort() // <- Método mutable: modifica el elemento original
 console.log(names);
+
+// MAP <- inmutable
+const namesUpper = names.map((name) => name.toUpperCase())
+console.log("🚀 ~", namesUpper)
+console.log("🚀 ~", names)
