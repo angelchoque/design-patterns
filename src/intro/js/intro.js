@@ -34,3 +34,18 @@ operation(suma, 10, 20)
 // fA()
 
 operation((a, b) => a * b, 5, 5)
+
+// FOR EACH <- inmutable
+const names = ["Juan", "Pedro", "Maria", "Julia"]
+
+names.forEach((name) => {
+  console.log(name)
+})
+
+names.forEach((name) => {
+  console.log(name.toUpperCase())
+})
+
+console.log(names);
+names.sort() // <- Método mutable: modifica el elemento original
+console.log(names);
