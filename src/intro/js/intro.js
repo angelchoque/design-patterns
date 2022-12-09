@@ -90,3 +90,23 @@ console.log("🚀 ~ ", drink.info())
 
 const drinkFn = new DrinkFn("awa")
 console.log("🚀 ~ ", drinkFn.info())
+
+// HERENCIA
+class Beer extends Drink {
+  // Cuando se hereda de una clase con un constructor que recibe un parámetro
+  // como hijo también esta obligado a recibir
+
+  constructor(name, alcohol) {
+    super(name)
+    this.alcohol = alcohol
+  }
+
+  // sobrescribir el método original
+  info() {
+    return super.info() + " " + this.alcohol
+  }
+
+}
+
+const beer = new Beer("unknown", 4.8)
+console.log(beer.info());
