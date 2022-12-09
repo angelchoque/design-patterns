@@ -26,3 +26,11 @@ function operation(fn, a ,b) {
 }
 
 operation(suma, 10, 20)
+
+
+// ARROW FUNCTION
+// let fA = () => console.log('Algo')
+
+// fA()
+
+operation((a, b) => a * b, 5, 5)
