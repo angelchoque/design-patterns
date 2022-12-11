@@ -1,7 +1,7 @@
 
 Los patrones de diseño pueden ser:
   - Creacional: [Singleton]
-  - Estructura
+  - Estructura: [Decorator]
   - Comportamiento: [Strategy, Observer]
 
 Strategy: Tener comportamientos distintos en un objeto y agregar nuevos
@@ -12,3 +12,6 @@ Strategy: Tener comportamientos distintos en un objeto y agregar nuevos
 Observer: Teniendo un objeto, este objeto puede tener estados las cuales son las
           propiedades o campos de la clase, cuando estos cambien, se notifica a un conjunto
           de observadores, el objeto clave es el subject
+
+Decorator: Como están estructuradas las clases, como se conforman unas con otras, soluciona
+           cuando queremos agregar funcionalidad por jerarquía
