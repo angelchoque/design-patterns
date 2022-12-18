@@ -91,6 +91,33 @@ class FormBuilder {
 
 }
 
+class FormDirector {
+
+  constructor(formBuilder) {
+    this.setBuilder(formBuilder)
+  }
+
+  setBuilder() {
+    this.formBuilder = formBuilder
+  }
+
+  createPeopleForm() {
+    this.formBuilder.reset()
+    this.formBuilder
+      .setText('firstName', 'Nombre')
+      .setText('lastName', 'Apellidos')
+  }
+
+  createContactForm() {
+    this.formBuilder.reset()
+    this.formBuilder
+      .setText('name', 'Nombre del solicitante')
+      .setEmail('email', 'Email')
+      .setEmail('message', 'Mensaje')
+  }
+
+}
+
 const formBuilder = new FormBuilder()
 
 const formPeople = formBuilder
@@ -108,3 +135,17 @@ const formPeople2 = formBuilder
 
 form1.innerHTML = formPeople.getContent()
 form2.innerHTML = formPeople2.getContent()
+
+const director = new FormDirector(formBuilder)
+
+director.createPeopleForm()
+
+form3.innerHTML = formBuilder.build().getContent()
+
+director.createPeopleForm()
+
+form4.innerHTML = formBuilder.build().getContent()
+
+director.createContactForm()
+
+form5.innerHTML = formBuilder.build().getContent()
