@@ -3,7 +3,7 @@
 Los patrones de diseño pueden ser:
 
 - Creacional: [Singleton, Builder]
-- Estructura: [Decorator]
+- Estructura: [Decorator, Bridge]
 - Comportamiento: [Strategy, Observer, State]
 
 Strategy: Tener comportamientos distintos en un objeto y agregar nuevos
@@ -22,3 +22,5 @@ Builder: Es un patron de diseño creacional, nos ayuda a crear un objeto
          Ejm: - Un objeto que tiene muchos elementos en su construcción, (un constructor
          enorme), separa el constructor en un conjunto de métodos encadenados, estos métodos
          se pueden invocar o no (dependiendo la construcción del objeto)
+
+Bridge: Separa una implementación de una clase que va hacer uso de esta implementación
